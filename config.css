@@ -1,0 +1,487 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trispace:wght@100;200;300;400;500;600;700;800&display=swap');
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+/*main*/
+body {
+    background-color: rgb(199, 233, 206);
+}
+
+div#container {
+    display: grid;
+    grid-template-rows: max-content max-content max-content max-content;
+}
+
+#socialmedias {
+    padding-left: 10px;
+}
+.socialmedia {
+    margin-right: 10px;
+    float: left;
+    height: 40px;
+    display: inline;
+}
+#logoif {
+    margin-right: 15px;
+    height: 45px;
+}
+header {
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    height: 3.5em;
+    padding: 1em 1em;
+    text-align: center;
+    background-color: #ffc830;
+    border-top: 2px solid #473931;
+    align-items: center;
+}
+
+img#logotipo {
+    height: 4em;
+    display: flex;
+    position: relative;
+    margin: auto;
+}
+
+.barra input[type=text] {
+    height: 23px;
+    padding: 10px;
+    font-size: 15px;
+    border: 2px solid white;
+    float: right;
+    width: 50%;
+    background: #76D1F2;
+    border-radius: 16px 0px 0px 16px;
+    box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px;
+}
+  
+.barra button {
+    float: right;
+    width: 10%;
+    padding: 10px;
+    background: #ffc830;
+    color: rgb(171, 222, 245);
+    font-size: 17px;
+    border: 2px solid rgb(255, 255, 255);
+    border-left: none;
+    cursor: pointer;
+    border-radius: 0px 16px 16px 0px;
+    box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px;
+}
+  
+.barra button:hover {
+    background: #7e7e7e73;
+}
+
+.barra::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+#lupinha {
+    height: 18px;
+}
+
+nav#secoes{
+    display: flex;
+    justify-content: space-between;
+    height: 2em;
+    background-color: #76D1F2;
+    padding: 0.4em 0.4em;
+    border-top: 2px solid #ffffff;
+    align-items: center;
+    box-shadow: 0px 5px 4px rgb(0 0 0 / 16%);
+    
+    
+}
+nav > a {
+    font-size: larger;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: 'Righteous', cursive;
+    text-decoration: none;
+    margin: 0.4em 7%;
+    padding: 10px;
+}
+nav > a:hover {
+    background-color: #5495ad9f;
+    transition-duration: 0.5s; 
+}
+
+div#entrada {
+    display: grid;
+    width: 1100px;
+    grid-template-rows: 78vh;
+    grid-template-columns: 50% 50%;
+    justify-content: space-between;
+    align-items: center;
+    margin:auto;
+}
+
+div#banner {
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    justify-content: flex-start;
+    width: 520px;
+    height: 370px;
+    margin: 0 auto;
+    box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px;
+    display: inline-block;
+    flex-direction: column;
+    border-radius: 10px;
+}
+img#id {
+    border-radius: 10px;
+}
+div#wellcome {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 500px;
+    margin: 0px 8px 8px;
+    padding: 30px;
+    display: inline-block;
+    font-family:'Trispace', sans-serif;
+    text-align: justify;
+}
+
+article#recomendar {
+    display: grid;
+    width: 1100px;
+    grid-template-rows: 50vh;
+    grid-template-columns: 25% 25% 25% 25%;
+    justify-content: space-between;
+    align-items: center;
+    margin:auto;
+    margin-top: 2em;
+    margin-bottom: 6em;
+}
+.miniblock {
+    height: 300px;
+    width: 220px;
+    border-radius: 16px;
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(to right, rgb(240, 228, 159) , rgb(250, 235, 152));
+    align-items: center;
+    justify-content: flex-start;
+    display: inline-block;
+    flex-direction: column;
+    padding: 16px;
+    margin: 100px auto 100px auto;
+    box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px;
+}
+.miniblock > img {
+    width: 210px;
+    margin: auto;
+    border-radius: 10px;
+    display: block;
+}
+.miniblock > p {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px 0px 0px 0px;
+    padding: 5px;
+    display: inline-block;
+    font-family:'Trispace', sans-serif;
+    text-align: center;
+}
+footer {
+    height: 50vh;
+    color: #ffffff;
+    box-shadow: rgb(0 0 0 / 16%) 5px 3px 8px;
+    background-color: #ffffff;
+    background-image: linear-gradient(to top, #ffe44e, #ffc830);
+
+}
+
+.designrp > h4 {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+.designrp > a {
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff;
+}
+.designrp > a:hover {
+    text-decoration: underline;
+}
+
+#divisaorp {
+    display: grid;
+    margin: 3em;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+#us > div {
+    padding: 10px 10px 0px 10px;
+    border: 2px solid white;
+    border-radius: 16px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: 25% 75%;
+
+}
+#us > div > a {
+    display: inline-block;
+}
+#us > div > p {
+    display: inline-block;
+    margin: 20px;
+}
+
+
+/*secoes*/
+.banner {
+    align-items: center;
+}
+.imagemdobnn {
+    border-radius: 12px;
+    width: 80vw;
+    display: flex;
+    position: relative;
+    margin: auto;
+    box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px;
+    margin-top: 50px;
+    margin-bottom: 3em;
+}
+/*01*/
+div#container1 {
+    display: grid;
+    grid-template-rows: max-content max-content max-content max-content;
+}
+#grades01 {
+    display: grid;
+    width: 1050px;
+    grid-template-rows: max-content max-content max-content max-content max-content max-content;
+    grid-template-columns: max-content max-content max-content;
+    justify-content: space-between;
+    align-items: center;
+    margin:auto;
+    margin-top: 3em;
+    margin-bottom: 5em;
+}
+#titulo01 {
+    font-family: 'Righteous', cursive;
+    text-decoration: none;
+    margin-top: 1.5em;
+    text-align: center;
+    font-weight: 100;
+    font-size: 2.5em;
+    color:rgb(44, 78, 139)
+}
+.blockflm {
+    text-decoration: none;
+    height: 500px;
+    width: 300px;
+    border-radius: 16px;
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(to right, rgb(240, 228, 159) , rgb(250, 235, 152));
+    align-items: center;
+    justify-content: flex-start;
+    display: block;
+    flex-direction: row;
+    padding: 16px;
+    box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px;
+    margin: 0px auto 20px auto;
+}
+.filmes > img {
+    width: 280px;
+    margin: 20px auto auto auto;
+    display: block;
+}
+.filmes :hover {
+    width: 300px;
+    transition-duration: 0.5s;
+    margin: auto;
+}
+.blockflm > h1 {
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    color: crimson;
+    margin: 30px auto;
+    font-size: xx-large;
+}
+.imgpatof {
+    border-radius: 10px;
+    box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px;
+    height: 300px;
+    margin: 10px auto 30px auto;
+    display: block;
+}
+/*02*/
+div#container2 {
+    display: grid;
+    grid-template-rows: max-content max-content max-content max-content;
+}
+.xblock {
+    width: 800px;
+    height: max-content;
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(to right, rgb(245, 234, 176) , rgb(255, 245, 191));
+    margin: 20px auto 30px auto;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px;
+}
+.xblock > h1 {
+    font-family: 'Righteous', cursive;
+    text-align: center;
+    color: crimson;
+    margin: 10px auto 10px auto;
+    font-size: xx-large;
+}
+.h444 {
+    text-decoration: none;
+    font-family: 'Righteous', cursive;
+    color:rgb(44, 78, 139);
+    margin: 20px auto 10px auto;
+    font-size: larger;
+}
+.prg {
+    font-family: 'Trispace', sans-serif;
+    text-align: justify;
+    line-height: 1.2em;
+    display: block;
+}
+.imgpato {
+    border-radius: 10px;
+    box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px;
+}
+.ftss {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+img#pato2 {
+    display: block;
+    margin: 15px 20px 0px 0px;
+    height: 8.3em;
+}
+img#pato1 {
+    margin: 10px 0px 0px 50px;
+    display: block;
+    height: 180px;
+}
+img#pato3 {
+    margin: 20px 30px 0px 0px;
+    display: block;
+    height: 220px;
+}
+img#pato4 {
+    margin: 20px 30px 0px 0px;
+    display: block;
+    height: 220px;
+}
+img#pato5 {
+    margin: 20px 0px 0px 30px;
+    display: block;
+    height: 250px;
+}
+img#pato6 {
+    margin: 20px 30px 0px 0px;
+    display: block;
+    height: 330px;
+}
+img#patopatriota2 {
+    margin: -10px 0px 30px 30px;
+    display: block;
+    height: 200px;
+}
+img#patopatriota1 {
+    margin: 20px 30px 0px 0px;
+    display: block;
+    height: 250px;
+}
+.musicapato {
+    margin: 30px auto 30px auto;
+    display: block;
+}
+div#tabelatipos {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto auto auto;
+    text-align: center;
+    align-items: center;
+}
+.tipopato{
+    border-radius: 10px;
+    box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px;
+    width: 360px;
+    margin: 30px auto auto auto;
+}
+    
+/*03*/
+div#container3 {
+    display: grid;
+    grid-template-rows: max-content max-content max-content max-content;
+}
+#memes {
+    margin: auto;
+    width: 700;
+    align-items: center;
+}
+#memes >figure {
+    border-radius: 10px;
+    box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px;
+    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(to right, rgb(245, 234, 176) , rgb(255, 245, 191));
+    padding: 30px;
+    margin: 30px auto 30px auto;
+}
+.memeedit {
+    width: 490px;
+    margin: auto;
+}
+
+/*04*/
+div#container4 {
+    display: grid;
+    grid-template-rows: max-content max-content min-content max-content;
+}
+
+.twitter-tweet {
+    margin-bottom: 50px;
+    margin: auto;
+}
+article#fofos {
+    margin-top: 3em;
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+#wpandicon {
+    border-left: 2px solid rgb(255, 255, 255);
+}
+.subt {
+    font-family: 'Righteous', cursive;
+    text-decoration: none;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.1em;
+    color:rgb(44, 78, 139)
+}
+#wpandicon > img {
+    border-radius: 12px;
+    margin-top: 1em;
+    max-width: 300px;
+    margin-left: 30px;
+}
+#wpandicon > a {
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    color: #304fff;
+    margin-left: 30px;
+}
+#wpandicon > a:hover {
+    text-decoration: underline;
+}
